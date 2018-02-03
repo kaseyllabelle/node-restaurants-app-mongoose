@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: xSoh1UTrk4s1Q8ggN6zT7W01fWtJx+4h3DdZKHLtB4PjZ/b9ZpGJ2zqEn+t1qVK74B6AfTryZP08cCzMRLtRyKJOODqfqu/hOVuj4HUWqxg/3cJHz/LbGCM03GYs3y4nXWP8rI1i36q7gRgbIRzDar6E8KMSxGqIFm6cAz9YrP6zS8A40+Jo97uV+6h1FzYOLykkyBmX8AHgMcn/uUoIr0MaAfctd/rC0H96KuU1MEoafL62x8fHqBJDbtMexGfs2m2rgqxGm/1Wt1puBb2e/hpki85fi4mv3XVWQ2gClpzcLC5oHhQAqHwxHXVh2FDfFtVqeOxxki1YgFvoeVNHvVe7JYM+D296oPfdTTIZmsX89KxPL63VXCF9pJjn0OCP32Z917iWCim5007PliYKhO4PsvNNYAt6a1pR3vVVGY3rmRd6/8PfHdr06qrp1HlyJengDIT4e5UT6zEjVoEVdrit8vuJKaxtU9pAB2d31+jqne8c7e4d+ytEuI8MyEyU42LqcEBxMs2wIABiazeKUSkcAXwW/dI1m7btyzGrOrhgq8RgmHHeSOVZX73aDE7rvVAJyk+2WqCyxpiKpQO7qHzzpw1R5MXH7COL29AyCtR3nKNmnooHpxORBAkPH2x+EVS5b1rO4JHjfHm7fnkofZqbmQmpwnTMeBejx4XQYbk=
+  app: secure-mountain-51907
+  on:
+    repo: kaseyllabelle/node-restaurants-app-mongoose
+    branch: feature/with-tests
